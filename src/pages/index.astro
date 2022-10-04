@@ -1,7 +1,20 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import SinglePost from "../component/singlePost.astro";
 ---
 
-<BaseLayout title='Welcome to Astro!'>
-	<h1 class="text-5xl font-bold">Astro</h1>
+<BaseLayout title='The ProjectHub'>
+	<div class="grid">
+		<img src="https://lh3.googleusercontent.com/Yqn_PdsSbeyhE7Dc0yAEYtLzQgOcXQbcovgLwbccNaTAowb-n4Vn1QfjUJ7HALq-u6pCpd1bvR1tYyCiP9iAT2vRwzTYM-CQxq3XUO7T2O3cVw27BbO7pEfaLPnqk8E7u7E9jmWILeJZ85NMhTHT_NkgPX1D7AtOYjzfFkvNU2wPYXS4l3s6qKBal17WLVreGNgNg-RZo7h0igipWBbD19ip4kpiCmt0lJXwtYA-4M2dqfdeb_Sdzwkwe9H0iWaTSL1gKrRXntm7CI6dCz9_-hjxtALO9NH1nojl_xsEcbeJ8GsQfKnwtQm0qI0ASFx2KJynAgfZeIbPzAeWWiBwfPv08xkpFw0bbS2yFJ_ICyXwluuwppaB28JUatdegc9RNvMa8SLnRBWvz9oBD-Ig_vSXcck7M0e4wqOVjQLlbSoFqeGuUaDjTJypQ7RSp-oNZBRJOqcQViYCBuz2u54N8c4CSZgRwEWi8CIzN_5HQsItnv4lfOQ70ctwa01t0HSM_a8YWNMZBCKlqyFnjYpIn0Wc2c2Y1xIvz9N1L3ne2Xgo5MSxpKVjkToLUH6nZdCZpMyk2nrRXQ4KyvTsDi3p4MDd2NmsDV-4FsePqgXMWXCbqSu7Esuwm0FBMnhjIJShFRzp525mL5uOjIbWKH6fUL9qz9ULM1v2r00EZ9-QIKIccKs_-E8TtjXqol2CREu04Op8wccXmQn_3_PPqwOuQzPe2h32I2CJ0iLlEPHil1XwQ4EVbSxFlg5SFXayl5qjumfI4gRhVhB9mRzI6CC9Lt1MbMKxI4S2ObK6bGaYIhI2O92A7vhrr-20XdtcY7mTjE00RhNT6a_oU7h7nZGWvWW3OUJyCRy0ecMs1MHdEM2RARX-YFYoa4l3ze4WVshSNGlFCSPPvAe3Hui0l1aFo8Ru94k13W9G4MrfKrY=w1206-h904-no?authuser=0" alt="" srcset="">
+		<h2 class="font-bold text-3xl text-gray-300 text-center mb-4 uppercase">Your First Astro Blog</h2>
+		<p class="text-gray-400 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan nunc non lobortis vulputate. Donec placerat urna id felis feugiat convallis. Cras varius vel mi ultricies faucibus. Pellentesque elementum, ipsum nec vehicula iaculis, quam sem.</p>
+	</div>
+	<div class="grid grid-cols-3 gap-5 py-6">
+		<SinglePost />
+		<SinglePost />
+		<SinglePost />
+		<SinglePost />
+		<SinglePost />
+		<SinglePost />
+	</div>
 </BaseLayout>

@@ -1,23 +1,22 @@
 ---
+import Nav from "./Nav.astro";
+
 const {title} = Astro.props
 ---
 
-<html lang="en">
+<html lang="en" class="dark">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" />
 	</head>
-	<body>
-        <div class="flex">
-            <sidebar class="w-2/12 bg-slate-800 fixed top-0 left-0 h-screen">
-                <p>This is the sidebar content</p>
-            </sidebar>
-            <section class="container flex items-center justify-center w-10/12 bg-slate-200">
-                <slot />
-            </section>
-        </div>
+	<body class="bg-zinc-800">
+		<Nav />
+		<section class="mx-auto max-w-screen-lg mt-8">
+			<slot/>
+		</section>
 	</body>
 </html>
