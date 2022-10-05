@@ -1,20 +1,32 @@
-<nav class="flex justify-between mx-auto max-w-screen-lg px-3 py-6 bg-zinc-800 text-white">
-    <a href="http://" class="text-2xl font-semibold">*MD in <span class=" text-cyan-400 font-bold">ASTRO</span></a>
-    <ul class="flex gap-x-3 font-medium text-gray-200">
-        <li class="hover:text-cyan-400 border-2 rounded border-cyan-400 p-2">
+<nav class="flex justify-between mx-auto max-w-screen-lg px-3 py-6 dark:text-white text-black">
+    <a href="http://" class="text-2xl font-bold">YT<span class=" text-cyan-600 font-bold">HUB</span></a>
+    <ul class="flex gap-x-2 font-medium dark:text-gray-200 text-gray-900">
+        <!-- <li class="hover:text-cyan-400 border-2 rounded border-cyan-400 p-2">
             <a href="/">Blogs</a>
+        </li> -->
+        <li class="hover:text-cyan-600 p-2">
+            <a href="https://youtube.com/siphiwo"><i class="fa-brands fa-youtube"></i> YouTube</a>
         </li>
-        <li class="hover:text-cyan-400 p-2">
-            <a href="https://youtube.com/siphiwo">Youtube</a>
+        <li class="hover:text-cyan-600 p-2">
+            <a href="https://github.com/Siphiwo"><i class="fa-brands fa-github"></i> Github</a>
         </li>
-        <li class="hover:text-cyan-400 p-2">
-            <a href="https://github.com/siphiwo">Github</a>
-        </li>
-        <li class="light-mode dark:hidden flex items-center justify-center">
-            <i class="fa-solid fa-sun"></i>
-        </li>
-        <li class="night-mode dark:flex items-center justify-center">
-            <i class="fa-regular fa-moon"></i>
+        <li class="p-2 light-mode toggle cursor-pointer">
+            <span class="dark:flex hidden flex items-center justify-center"><i class="fa-solid fa-sun mr-1"></i> Light</span>
+            <span class="dark:hidden flex items-center justify-center"><i class="fa-regular fa-moon mr-1"></i> Dark</span>
         </li>
     </ul>
 </nav>
+
+<script>
+	const toggle = document.querySelector('.toggle')
+
+    toggle.addEventListener('click', () => {
+        if(document.querySelector('html').classList.contains('dark')) {
+            document.querySelector('html').classList.remove('dark')
+            document.querySelector('html').classList.add('light')
+            return
+        }
+        document.querySelector('html').classList.remove('light')
+        document.querySelector('html').classList.add('dark')
+    })
+</script>

@@ -1,20 +1,24 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import SinglePost from "../component/singlePost.astro";
 ---
 
 <BaseLayout title='The ProjectHub'>
-	<div class="grid">
-		<img src="https://lh3.googleusercontent.com/Yqn_PdsSbeyhE7Dc0yAEYtLzQgOcXQbcovgLwbccNaTAowb-n4Vn1QfjUJ7HALq-u6pCpd1bvR1tYyCiP9iAT2vRwzTYM-CQxq3XUO7T2O3cVw27BbO7pEfaLPnqk8E7u7E9jmWILeJZ85NMhTHT_NkgPX1D7AtOYjzfFkvNU2wPYXS4l3s6qKBal17WLVreGNgNg-RZo7h0igipWBbD19ip4kpiCmt0lJXwtYA-4M2dqfdeb_Sdzwkwe9H0iWaTSL1gKrRXntm7CI6dCz9_-hjxtALO9NH1nojl_xsEcbeJ8GsQfKnwtQm0qI0ASFx2KJynAgfZeIbPzAeWWiBwfPv08xkpFw0bbS2yFJ_ICyXwluuwppaB28JUatdegc9RNvMa8SLnRBWvz9oBD-Ig_vSXcck7M0e4wqOVjQLlbSoFqeGuUaDjTJypQ7RSp-oNZBRJOqcQViYCBuz2u54N8c4CSZgRwEWi8CIzN_5HQsItnv4lfOQ70ctwa01t0HSM_a8YWNMZBCKlqyFnjYpIn0Wc2c2Y1xIvz9N1L3ne2Xgo5MSxpKVjkToLUH6nZdCZpMyk2nrRXQ4KyvTsDi3p4MDd2NmsDV-4FsePqgXMWXCbqSu7Esuwm0FBMnhjIJShFRzp525mL5uOjIbWKH6fUL9qz9ULM1v2r00EZ9-QIKIccKs_-E8TtjXqol2CREu04Op8wccXmQn_3_PPqwOuQzPe2h32I2CJ0iLlEPHil1XwQ4EVbSxFlg5SFXayl5qjumfI4gRhVhB9mRzI6CC9Lt1MbMKxI4S2ObK6bGaYIhI2O92A7vhrr-20XdtcY7mTjE00RhNT6a_oU7h7nZGWvWW3OUJyCRy0ecMs1MHdEM2RARX-YFYoa4l3ze4WVshSNGlFCSPPvAe3Hui0l1aFo8Ru94k13W9G4MrfKrY=w1206-h904-no?authuser=0" alt="" srcset="">
-		<h2 class="font-bold text-3xl text-gray-300 text-center mb-4 uppercase">Your First Astro Blog</h2>
-		<p class="text-gray-400 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan nunc non lobortis vulputate. Donec placerat urna id felis feugiat convallis. Cras varius vel mi ultricies faucibus. Pellentesque elementum, ipsum nec vehicula iaculis, quam sem.</p>
-	</div>
-	<div class="grid grid-cols-3 gap-5 py-6">
-		<SinglePost />
-		<SinglePost />
-		<SinglePost />
-		<SinglePost />
-		<SinglePost />
-		<SinglePost />
-	</div>
+	<header class="py-20">
+
+		<div class="flex items-center mx-auto max-w-screen-lg">
+			<svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 350" class="absolute w-4/12 bottom-30 left-4/12 -rotate-90 z-0 fill-cyan-400">
+				<path d="M156.4,339.5c31.8-2.5,59.4-26.8,80.2-48.5c28.3-29.5,40.5-47,56.1-85.1c14-34.3,20.7-75.6,2.3-111  c-18.1-34.8-55.7-58-90.4-72.3c-11.7-4.8-24.1-8.8-36.8-11.5l-0.9-0.9l-0.6,0.6c-27.7-5.8-56.6-6-82.4,3c-38.8,13.6-64,48.8-66.8,90.3c-3,43.9,17.8,88.3,33.7,128.8c5.3,13.5,10.4,27.1,14.9,40.9C77.5,309.9,111,343,156.4,339.5z"/>
+				</svg>
+			<img src="/images/header-image.jpg" alt="" srcset="/images/header-image.jpg 420w" class="w-80 rounded-xl relative z-10">
+			<div class="relative z-10 intro flex justify-center flex-col flex-1 h-80 p-24 dark:bg-zinc-900 bg-slate-100 rounded-xl -ml-20 shadow-lg">
+				<h2 class="font-bold text-3xl dark:text-gray-300 text-gray-900 mb-4">Your Personalized <span class=" text-cyan-600 font-bold">YouTube</span> Library</h2>
+				<p class="dark:text-gray-400 text-gray-700">When a video envokes an emomtion, we tend to re-watch it. Why not create a library of your favourite videos here.</p>
+				<form id="getVideo" class="mt-6">
+					<input type="url" id="videoUrl" placeholder="Paste video link here..." class="rounded-l-lg p-2 dark:bg-slate-200 bg-slate-500 w-1/2 placeholder:text-white dark:placeholder:text-slate-600">
+					<button class="text-white bg-cyan-600 px-4 py-2 rounded-r-lg -ml-2"><i class="fa-solid fa-cloud-arrow-down"></i></button>
+				</form>
+
+			</div>
+		</div>
+	</header>
 </BaseLayout>
